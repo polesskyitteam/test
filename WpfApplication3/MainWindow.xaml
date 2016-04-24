@@ -1,0 +1,148 @@
+﻿<Window x:Class="WpfApplication3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:WpfApplication3"
+        Title="MainWindow"
+        Width="710.5"
+        Height="443">
+    <Window.DataContext>
+        <vm:ViewModel />
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="Auto" MinWidth="272" />
+        </Grid.ColumnDefinitions>
+
+        <DataGrid Width="419"
+                  Height="382"
+                  Margin="10,10,0,0"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top"
+                  AlternatingRowBackground="Gold"
+                  AutoGenerateColumns="False"
+                  CanUserAddRows="False"
+                  ItemsSource="{Binding Students,
+                                        UpdateSourceTrigger=PropertyChanged,
+                                        Mode=OneWay}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Student.NameView, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}" Header="ФИО" />
+                <DataGridTextColumn Binding="{Binding Student.AgeView, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}" Header="Возраст" />
+                <DataGridTextColumn Binding="{Binding Student.GenderView, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}" Header="Пол" />
+                <DataGridTemplateColumn Header="Удалить">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Command="{Binding RemoveCmd}" Content="Удалить" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Редактировать">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Command="{Binding EditCmd}" Content="Редавтировать" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Grid.Column="1" Orientation="Vertical">
+            <GroupBox Margin="5" Header="Редактирование">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="Фамилия" />
+                    <TextBox Width="250" Text="{Binding EditableStudent.FirstName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+                    <TextBlock Text="Имя" />
+                    <TextBox Width="250" Text="{Binding EditableStudent.Last, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+                    <TextBlock Text="Возраст" />
+                    <Grid>
+                        <Slider x:Name="AgeEdit"
+                                Width="221"
+                                HorizontalAlignment="Left"
+                                LargeChange="5"
+                                Maximum="100"
+                                Minimum="16"
+                                SmallChange="1"
+                                Value="{Binding EditableStudent.Age,
+                                                UpdateSourceTrigger=PropertyChanged,
+                                                Mode=TwoWay}" />
+                        <TextBox Width="24"
+                                 HorizontalAlignment="Right"
+                                 IsEnabled="False"
+                                 Text="{Binding ElementName=AgeEdit,
+                                                Path=Value}" />
+                    </Grid>
+
+                    <TextBlock Text="Пол" />
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Left"
+                                   FontSize="9"
+                                   Foreground="#FF8B8888"
+                                   Text="Мужской" />
+                        <TextBlock HorizontalAlignment="Right"
+                                   FontSize="9"
+                                   Foreground="#FF8B8888"
+                                   Text="Женский" />
+                    </Grid>
+                    <Slider LargeChange="1"
+                            Maximum="1"
+                            Minimum="0"
+                            SmallChange="1"
+                            Value="{Binding EditableStudent.Gender,
+                                            UpdateSourceTrigger=PropertyChanged,
+                                            Mode=TwoWay}" />
+                    <Button Command="{Binding EditSubmitCmd}" Content="Сохранить" />
+                </StackPanel>
+            </GroupBox>
+
+            <GroupBox Margin="5" Header="Добавление">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="Фамилия" />
+                    <TextBox Width="250" Text="{Binding AddableStudent.FirstName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+                    <TextBlock Text="Имя" />
+                    <TextBox Width="250" Text="{Binding AddableStudent.Last, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+                    <TextBlock Text="Возраст" />
+                    <Grid>
+                        <Slider x:Name="AgeAdd"
+                                Width="221"
+                                HorizontalAlignment="Left"
+                                LargeChange="5"
+                                Maximum="100"
+                                Minimum="16"
+                                SmallChange="1"
+                                Value="{Binding AddableStudent.Age,
+                                                UpdateSourceTrigger=PropertyChanged,
+                                                Mode=TwoWay}" />
+                        <TextBox Width="24"
+                                 HorizontalAlignment="Right"
+                                 IsEnabled="False"
+                                 Text="{Binding ElementName=AgeAdd,
+                                                Path=Value}" />
+                    </Grid>
+
+                    <TextBlock Text="Пол" />
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Right"
+                                   FontSize="9"
+                                   Foreground="#FF8B8888"
+                                   Text="Женский" />
+                        <TextBlock HorizontalAlignment="Left"
+                                   FontSize="9"
+                                   Foreground="#FF8B8888"
+                                   Text="Мужской" />
+                    </Grid>
+                    <Slider LargeChange="1"
+                            Maximum="1"
+                            Minimum="0"
+                            SmallChange="1"
+                            Value="{Binding AddableStudent.Gender,
+                                            UpdateSourceTrigger=PropertyChanged,
+                                            Mode=TwoWay}" />
+                    <Button Command="{Binding AddCmd}" Content="Добавить" />
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+
+
+    </Grid>
+</Window>

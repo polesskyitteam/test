@@ -1,0 +1,34 @@
+C:\Users\Александр Домась\Documents\Visual Studio 2013\Projects\WpfApplication3\WpfApplication3\bin\Debug\WpfApplication3.exe.config
+C:\Users\Александр Домась\Documents\Visual Studio 2013\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.csprojResolveAssemblyReference.cache
+C:\Users\Александр Домась\Documents\Visual Studio 2013\Projects\WpfApplication3\WpfApplication3\obj\Debug\MainWindow.g.cs
+C:\Users\Александр Домась\Documents\Visual Studio 2013\Projects\WpfApplication3\WpfApplication3\obj\Debug\App.g.cs
+C:\Users\Александр Домась\Documents\Visual Studio 2013\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3_Content.g.cs
+C:\Users\Александр Домась\Documents\Visual Studio 2013\Projects\WpfApplication3\WpfApplication3\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Александр Домась\Documents\Visual Studio 2013\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3_MarkupCompile.cache
+C:\Users\Александр Домась\Documents\Visual Studio 2013\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3_MarkupCompile.lref
+C:\Users\Александр Домась\Documents\Visual Studio 2013\Projects\WpfApplication3\WpfApplication3\bin\Debug\WpfApplication3.exe
+C:\Users\Александр Домась\Documents\Visual Studio 2013\Projects\WpfApplication3\WpfApplication3\bin\Debug\WpfApplication3.pdb
+C:\Users\Александр Домась\Documents\Visual Studio 2013\Projects\WpfApplication3\WpfApplication3\obj\Debug\MainWindow.baml
+C:\Users\Александр Домась\Documents\Visual Studio 2013\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.g.resources
+C:\Users\Александр Домась\Documents\Visual Studio 2013\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.Properties.Resources.resources
+C:\Users\Александр Домась\Documents\Visual Studio 2013\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.csproj.GenerateResource.Cache
+C:\Users\Александр Домась\Documents\Visual Studio 2013\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.exe
+C:\Users\Александр Домась\Documents\Visual Studio 2013\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.pdb
+C:\Users\Александр Домась\Documents\Visual Studio 2013\Projects\WpfApplication3\WpfApplication3\bin\Debug\Students.xml
+C:\Users\Evgeniy\Desktop\WpfApplication3\WpfApplication3\bin\Debug\WpfApplication3.exe.config
+C:\Users\Evgeniy\Desktop\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.exe
+C:\Users\Evgeniy\Desktop\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.pdb
+C:\Users\Evgeniy\Desktop\WpfApplication3\WpfApplication3\bin\Debug\Students.xml
+C:\Users\Evgeniy\Desktop\WpfApplication3\WpfApplication3\bin\Debug\WpfApplication3.exe
+C:\Users\Evgeniy\Desktop\WpfApplication3\WpfApplication3\bin\Debug\WpfApplication3.pdb
+C:\Users\Evgeniy\Desktop\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.csprojResolveAssemblyReference.cache
+C:\Users\Evgeniy\Desktop\WpfApplication3\WpfApplication3\obj\Debug\MainWindow.g.cs
+C:\Users\Evgeniy\Desktop\WpfApplication3\WpfApplication3\obj\Debug\App.g.cs
+C:\Users\Evgeniy\Desktop\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3_Content.g.cs
+C:\Users\Evgeniy\Desktop\WpfApplication3\WpfApplication3\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Evgeniy\Desktop\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3_MarkupCompile.cache
+C:\Users\Evgeniy\Desktop\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3_MarkupCompile.lref
+C:\Users\Evgeniy\Desktop\WpfApplication3\WpfApplication3\obj\Debug\MainWindow.baml
+C:\Users\Evgeniy\Desktop\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.g.resources
+C:\Users\Evgeniy\Desktop\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.Properties.Resources.resources
+C:\Users\Evgeniy\Desktop\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.csproj.GenerateResource.Cache
